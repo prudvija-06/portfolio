@@ -1,0 +1,672 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', seri;
+  text-decoration: none;
+  list-style: none;
+  
+
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background: black;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.img-box1 img{
+  border-radius: 30%;
+  width:50px;
+}
+.logo{
+  font-size: 25px;
+  color: white;
+  font-weight:600;
+  transition: 0.3s ease;
+}
+.logo:hover{
+  color: rgb(4, 234, 203);
+  text-shadow: 0 0 25px  rgb(255, 245, 239),
+  0 0 50px teal ;
+  transform: scale(1.1);
+}
+span{
+  color:#16a085;
+} 
+.navbar a{
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+  font-style: bold;
+}
+.navbar a:hover,
+.navbar a.active{
+  color: rgb(37, 105, 99) ;
+  border-bottom: 3px solid  rgb(113, 176, 165);
+}
+.contact{
+  padding: 10px 28px;
+  background-color: white;
+  color: black;
+  border:1px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition:0.3s ease;
+}
+.contact:hover{
+  background-color:  rgb(188, 244, 218);
+  box-shadow: 0 0 25px  rgb(190, 247, 218);
+  color: rgb(3, 93, 84);
+}
+.home{
+  width: 100%;
+  min-height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  gap: 70m;
+  padding: 30px 12% 0;
+}
+.home-content{
+  max-width: 800px;
+}
+.home-content h3{
+  font-size: 32px;
+}
+.home-content h1{
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.home-content p{
+  font-size: 20px;
+  margin: 25px 0 30px;
+  margin-bottom: 20px;
+ 
+}
+.btn-box{
+  width: 350px;
+  display: inline-flex;
+  gap: 40m;
+  
+}
+.btn-1{
+  padding: 15px 28px;
+  background-color: black;
+  color: rgb(225, 228, 231);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-right: 40px;
+  
+}
+.btn-1:hover{
+  background-color: aliceblue;
+  color: black;
+  border: 2px solid black;
+}
+.btn-2{
+  padding: 15px 28px;
+  background-color: #16a085;
+  color: aliceblue;
+  border: 2px solid rgb(3, 144, 99);
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-right: 40px;
+}
+.btn-2:hover{
+  background-color: rgb(163, 242, 226);
+  color: rgb(38, 26, 15);
+  border: 2px solid rgb(3, 131, 101);
+}
+.img-box img{
+  border-radius: 50%;
+  width:200px;
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(1, 63, 41);
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(3, 63, 48);
+  width: 50px;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 8%;
+  gap: 5em;
+  background: rgb(23, 19, 19);
+ 
+}
+.about-content h2{
+  text-align: left;
+  color: rgb(241, 249, 244);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.about-content h3{
+  font-size: 32px;
+  color:rgb(249, 248, 247);
+  margin-bottom: 15px;
+}
+.about-content p{
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.contact-form{
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-size: 30px;
+
+}
+.contact-form form{
+  max-width: 30em;
+  margin:1rem auto ;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.contact-form form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+  width: 60%;
+  padding: 1.5em;
+  font-size: 17px;
+  color: black;
+  background: white;
+  border-radius: 0.8rem;
+  margin:1rem 0;
+  resize: none;
+}
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: black;
+}
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+.footer .social a{
+  font-size:20px;
+  color: white;
+  border: 2px solid #16a085;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  box-shadow: inset 0 0 10px #16a085, 0 0 10px #16a085;
+  transition: 0.3s ease;
+}
+.footer .social a:hover{
+  transform: scale(1.2)translateY(-10px);
+  color: #16a085;
+  border:2px solid o;
+}
+.footer ul{
+  margin-top: 0;
+  padding: 0%;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer ul li a{
+  color: white;
+  border-bottom: 3px solid transparent;
+ transition: 0.3s ease; 
+}
+.footer ul li a:hover{
+  border-bottom: 3px solid #16a085;
+}
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+
+
+
+
+
+.experience {
+  background: #f5f5f5;
+  padding: 120px 12%;  /* Increased padding for more space */
+ 
+}
+
+.experience .heading {
+  font-size: 42px;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 30px;  
+  margin-bottom: 60px;  /* Increased bottom margin for more spacing */
+}
+.experience .heading span {
+  color: #16a085; /* Teal accent */
+}
+.job {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.job-header {
+  margin-bottom: 15px;
+  padding-bottom: 10px; /* Add some space below the header */
+}
+
+.job-header h3 {
+  font-size: 1.8em;
+  color:#16a085;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove padding */
+  display: inline-block; /* Allows for line-height adjustment */
+}
+
+.company {
+  font-style: italic;
+  color: #555;
+  margin: 5px 0; /* Space between company and date */
+}
+
+.date {
+  font-size: 0.9em;
+  color: #473d3d;
+  margin: 5px 0; /* Space below the date */
+}
+
+.job-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.job-details li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.job-details li:before {
+ 
+  margin-right: 10px;
+  color:#16a085; /* Icon color */
+  font-size: 1.2em; /* Slightly larger icon */
+}
+
+/* Optional: Add a subtle border to job sections */
+.job {
+  border: 1px solid #f0f0f0; /* Light border for distinction */
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+/* ====== Academic Projects Section ====== */
+.projects {
+  background: #f5f5f5;
+  padding: 120px 12%;  /* Increased padding for more space */
+ 
+}
+
+.projects .heading {
+  font-size: 42px;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 30px;  
+  margin-bottom: 60px;  /* Increased bottom margin for more spacing */
+}
+
+.projects .heading span {
+  color: #16a085; /* Teal accent */
+}
+
+/* ====== Timeline Container ====== */
+.projects.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;  /* Increased gap between project items */
+}
+
+/* ====== Individual Project Item ====== */
+.project-item {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Project Content ====== */
+.project-content h3 {
+  font-size: 28px;
+  color: #16a085; /* Teal heading */
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-content p strong {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* ====== Technologies Section ====== */
+.project-content strong {
+  font-weight: bold;
+  color: #015a42; /* Golden accent for technologies */
+}
+
+/* ====== Hover Effect for Technologies ====== */
+.project-content p:hover strong {
+  color: #075d54; /* Red hover effect */
+  transition: 0.3s;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 1024px) {
+  .projects {
+    padding: 100px 8%;
+    margin-top: 60px;  /* Adjusted margin for medium screens */
+  }
+  .project-item {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 80px 6%;
+    margin-top: 50px;  /* Adjusted margin for small screens */
+  }
+  .project-item {
+    padding: 30px;
+  }
+  .projects .heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 60px 5%;
+    margin-top: 40px;  /* Adjusted margin for extra small screens */
+  }
+  .project-item {
+    padding: 25px;
+  }
+  .projects .heading {
+    font-size: 30px;
+  }
+}
+
+
+
+
+.education {
+  background-color: #f4f4f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.education .heading {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.education .heading span {
+  color: #16a085;
+}
+
+.education .timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a flexible grid with minimum 250px width per card */
+  gap: 30px; /* Space between cards */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Padding for the grid */
+}
+
+.edu-item {
+  width: 100%; /* Full width of the grid cell */
+  height: 350px;
+  perspective: 1000px; /* Add 3D perspective for flipping effect */
+}
+
+.edu-item .card {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.edu-item:hover .card {
+  transform: rotateY(180deg); /* Flip the card when hovered */
+}
+
+.card .front, .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back side when flipped */
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card .back {
+  background-color: #a7d2c9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+
+.edu-content h3 {
+  color: #16a085;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center; /* Center align the title */
+}
+
+.edu-content p {
+  color: #191616;
+  text-align: center; /* Center align the description */
+}
+
+
+
+.skills {
+  text-align: center;
+  padding: 80px 12%;
+  background: rgb(245, 245, 245);
+}
+
+.skills .heading {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.skill-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-box i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
+}
+
+/* Courses Section */
+.courses {
+  text-align: center;
+  padding: 60px 12%;
+  background: #f5f5f5;
+  margin-top: 20px;
+}
+
+.courses-container ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.courses-container li {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+
+
+
+.contact 
+  body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
+}
+.contact  
+  .contact  {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact 
+  .heading {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+.contact .map {
+  text-align: center;
+}
+
+iframe {
+  border-radius: 4px;
+}
+
